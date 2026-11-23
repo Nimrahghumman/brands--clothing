@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F5F1E9;
+  --color-surface: #FFFFFF;
+  --color-foreground: #111111;
+  --color-muted: #595550;
+  --color-subtle: #777777;
+  --color-accent: #D8C7AD;
+  --color-border: #DDD5C7;
+  --color-primary: #111111;
+  --color-primary-foreground: #FFFFFF;
+  --color-whatsapp: #1D6F42;
+  --color-danger: #9E2A2B;
+
+  --font-sans: "Instrument Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Newsreader", Georgia, serif;
+
+  --text-hero: clamp(2.35rem, 1.5rem + 3.4vw, 4.5rem);
+  --text-hero--line-height: 1.04;
+  --text-hero--letter-spacing: -0.02em;
+
+  --text-display: clamp(1.75rem, 1.35rem + 1.4vw, 2.75rem);
+  --text-display--line-height: 1.12;
+  --text-display--letter-spacing: -0.015em;
+
+  --text-title: clamp(1.2rem, 1.05rem + 0.5vw, 1.5rem);
+  --text-title--line-height: 1.25;
+
+  --radius-card: 0.125rem;
+  --radius-control: 0.125rem;
+  --shadow-surface: 0 0 transparent;
+  --shadow-floating: 0 20px 45px -15px rgba(17, 17, 17, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-synthesis-weight: none;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *:not(.animate-spin):not(.animate-pulse),
+  *:not(.animate-spin):not(.animate-pulse)::before,
+  *:not(.animate-spin):not(.animate-pulse)::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

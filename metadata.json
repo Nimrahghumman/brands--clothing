@@ -1,0 +1,6 @@
+{
+  "name": "KOVA — Modern Essential Wardrobe",
+  "description": "Luxury editorial fashion and contemporary clothing e-commerce storefront featuring timeless menswear, womenswear, and direct WhatsApp concierge ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
